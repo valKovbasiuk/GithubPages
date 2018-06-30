@@ -1,0 +1,416 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body {
+    line-height: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+
+li {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.white {
+    background-color: #ffffff;
+}
+
+.grey {
+    background-color: #e3e3e3;
+}
+
+header {    
+    height: 610px;
+    width: 100%;
+    padding-top: 10px;
+    position: relative;
+    background-color: #2ecc71;
+    overflow: hidden;
+}
+
+header .hero {
+    position: absolute;
+    left: 50%;
+    width: 1600px;
+    height: 600px;
+    margin-left: -800px;
+}
+
+header .optional_pic {
+    position: relative;
+    margin-top: 95px;
+    margin-left: 45%;
+}
+
+.optional_pic .base_pic {
+    position: absolute;
+}
+
+header h1 {
+    margin-top: 170px;
+}
+
+.optional_pic .pic_in_pic {
+    position: absolute;
+    left: 65px;
+    top: 66px;
+    clip-path: inset(1px);
+}
+
+header .wrapper {
+    margin: 0 55% 0 24%;
+}
+
+h1 .logo, h1 .logo span {
+    position: relative;
+    color: #ffffff;
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+h1 .logo span {
+    color: #2ecc71;
+}
+
+h1 .moto {
+    position: relative;
+    color: #ffffff;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-top: 63px;
+}
+
+ul li {
+    list-style: none;
+
+}
+
+.round_button_w_pic {
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    opacity: 0.5;
+}
+
+.round_button_w_pic:hover {
+    opacity: 1.0;
+}
+
+.round_button_w_pic img {
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.round_button_w_pic a {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+
+.round_button_w_pic a:hover {
+    background-color: #2ecc71;
+}
+
+.download .round_button_w_pic {    
+    width: 54px;
+    height: 54px;
+    background-color: #030303;
+    opacity: 0.5;
+}
+
+.round_button_w_pic:hover {
+    opacity: 1.0;
+}
+
+.download {
+    display: flex;
+    margin-left: -7px;
+    margin-top: 14px;
+    min-width: 200px;
+}
+
+.download li {
+    margin: 0 7px;
+}
+
+.download .wrapper {
+    position: relative;
+}
+
+.download .round_button_w_pic img {    
+    top: 27px;
+    left: 27px;
+}
+
+#app_apple img {
+    margin-top: -2px;
+}
+
+.features .round_button_w_pic {
+    margin: 0 auto;
+    width: 98px;
+    height: 98px;
+    background-color: #2ecc71;
+    opacity: 1.0;
+}
+
+.features .round_button_w_pic img {
+    top: 49px;
+    left: 49px;
+}
+
+.features h2 {
+    margin-top: 31px;
+    margin-bottom: 29px;
+    text-align: center;
+}
+
+.features p {
+    text-align: center;
+}
+
+.features ul {
+    max-width: 1180px;
+    margin: auto;
+} 
+
+.features li {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    margin: 30px 20px;
+    width: 313px;
+}
+
+.video {
+    width: 500px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+form {
+    padding-right: 10%;
+}
+
+form, .video {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 590px;
+    min-width: 500px;
+    justify-content: space-between;
+}
+
+form h2 {
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+
+
+form input, .email {
+    width: 446px;
+    height: 56px;
+}
+
+.email {
+    margin-top: 26px;
+    position: relative;
+    border: none;
+}
+
+form input {
+    position: absolute;
+    padding-left: 18px;
+    width: 100%;
+    height: 56px;
+    border: 1px solid #c8c8c8;
+    background-color: #ffffff;
+    border-radius: 15px;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+form button {
+    position: absolute;
+    padding: 0 10%;
+    right: 0;
+    border-radius: 0 15px 15px 0;
+    height: 56px;
+    background-color: #2ecc71;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.faces_wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.face {
+    position: relative;
+    margin: 3px;
+}
+
+.faces .overlay {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+    background-color: #2ecc71;
+}
+
+.faces .overlay:hover {
+    opacity: 0.5;
+}
+
+footer {
+    min-height: 130px;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 54px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 544px;
+    margin: 0 auto;
+}
+
+footer li {
+    margin: 0 auto;
+    line-height: 1;
+}
+
+.title_font {
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #222222;
+}
+
+.text_font {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #848484;
+}
+
+.phrases {
+    margin-top: 30px;
+}
+
+.phrases p {
+    margin: 0 auto;
+    max-width: 835px;
+    text-align: center;
+}
+
+.phrases q {
+    color: #848484;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.phrases .author {
+    color: #2e2e2e;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 3;
+}
+
+.social h2 {
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 21px;
+}
+
+.social p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+}
+
+#section_1 ul {
+    text-align: center;
+}
+
+#section_2 .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.social .round_button_w_pic {
+    width: 34px;
+    height: 34px;
+    margin: 0 5px;
+    background-color: #c5c5c5;
+    opacity: 1;
+}
+
+.social .round_button_w_pic img {
+    top: 17px;
+    left: 17px;
+}
+
+.social .buttons_group {
+    margin-bottom: 30px;
+}
+
